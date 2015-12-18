@@ -5026,7 +5026,7 @@ function ThemingDirective($mdTheming, $interpolate, $log) {
         var ctrl = {
           $setTheme: function(theme) {
             if (!$mdTheming.registered(theme)) {
-              $log.warn('attempted to use unregistered theme \'' + theme + '\'');
+              //$log.warn('attempted to use unregistered theme \'' + theme + '\'');
             }
             ctrl.$mdTheme = theme;
           }
